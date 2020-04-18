@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Export Patreon Comments",
+  "version": "1.0",
+  "permissions": [
+    "contextMenus", "*://*.patreon.com/posts/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "js": ["content.js"],
+    "matches": ["*://*.patreon.com/posts/*"]
+  }],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": ["icon128.png"],
+  "description": "Use this extension on Patreon's posts pages to export or show all comments. How t o use: Right-click on the page."
+}
