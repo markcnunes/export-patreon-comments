@@ -19,5 +19,5 @@
     "128": "icon128.png"
   },
   "web_accessible_resources": ["icon128.png"],
-  "description": "Use this extension on Patreon's posts pages to export or show all comments. How t o use: Right-click on the page."
+  "description": "Use this extension on Patreon's posts pages to export or show all comments. How to use: Right-click on the page."
 }
