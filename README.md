@@ -14,11 +14,12 @@ How to use: Right-click on the page.
 ## Authors
 
 [Mark Claus Nunes](https://github.com/markcnunes) - *Initial work* 
+[Gabrielle Motola](www.gabriellemotola.com) - *Concept* 
 
 See also the list of [contributors](https://github.com/markcnunes/export-patreon-comments/graphs/contributors) who participated in this project.
 
 ## Acknowledgments
 
-This extension was developed because of Gabrielle Motola's frustration to load all of Paetron's comments. Here is a post about how she had the idea for this extension:
+This extension was developed over Discord from idea Gabrielle Motola had in sympathetic response to Amanda Palmer having to load 2000 patron's comments on a post and read them (which took 12 hours). Here is an article about Gabrielle's experience of her Patreon so far and how we collaborated to develop this.
 
 [Read more](https://medium.com/@gmotophotos/patreon-so-far-d1435e7a5c55)
