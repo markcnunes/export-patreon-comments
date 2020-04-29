@@ -9,7 +9,7 @@ How to use: Right-click on the page.
 
 ![Cover](https://github.com/markcnunes/export-patreon-comments/blob/master/graphics/printscreen.png)
 
-[Chrome Web Store](https://chrome.google.com/webstore/detail/export-patreon-comments/cbpcohjaihendbaaegnfobblodjodecg)
+[Open the extension on Chrome Web Store](https://chrome.google.com/webstore/detail/export-patreon-comments/cbpcohjaihendbaaegnfobblodjodecg)
 
 ## Authors
 
