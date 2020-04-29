@@ -11,7 +11,7 @@ How to use: Right-click on the page.
 
 ## Authors
 
-[Mark CLaus Nunes](https://github.com/markcnunes) - *Initial work* 
+[Mark Claus Nunes](https://github.com/markcnunes) - *Initial work* 
 
 See also the list of [contributors](https://github.com/markcnunes/export-patreon-comments/graphs/contributors) who participated in this project.
 
