@@ -14,6 +14,7 @@ How to use: Right-click on the page.
 ## Authors
 
 [Mark Claus Nunes](https://github.com/markcnunes) - *Initial work* 
+
 [Gabrielle Motola](www.gabriellemotola.com) - *Concept* 
 
 See also the list of [contributors](https://github.com/markcnunes/export-patreon-comments/graphs/contributors) who participated in this project.
