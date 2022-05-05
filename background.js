@@ -8,50 +8,53 @@
  |     Created - Date:  17/04/2022
  *===========================================================================*/
 
- 
-function genericOnClick(info, tab) {
-    
-    chrome.tabs.executeScript(
-        null,
-        {
-            file: "jquery.min.js"
-        },
-        function() {
-            if (info.menuItemId === "contextId1") {
+const genericOnClick = (info, tab) => {
+    chrome.scripting
+        .executeScript({
+            target: { tabId: tab.id },
+            files: ['jquery.min.js']
+        })
+        .then(() => {
+            if (info.menuItemId === 'contextId1') {
                 chrome.tabs.sendMessage(tab.id, {
-                    message: "show-comments"
-                });
-            } else if (info.menuItemId === "contextId2") {
+                    message: 'show-comments'
+                })
+            } else if (info.menuItemId === 'contextId2') {
                 chrome.tabs.sendMessage(tab.id, {
-                    message: "export-comments"
-                });
+                    message: 'export-comments'
+                })
             }
-            
-        }
-    );
+        })
+        .catch(err => console.log(err))
 }
 
 // Load jQuery
-chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
-    chrome.tabs.executeScript(tabId, {
-        file: 'jquery.min.js'
-    }, () => chrome.runtime.lastError);
-}); 
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+    if (changeInfo.status === 'complete' && /^http/.test(tab.url)) {
+        chrome.scripting
+            .executeScript({
+                target: { tabId: tabId },
+                files: ['jquery.min.js']
+            })
+            .catch(err => console.log(err))
+    }
+})
 
-const showForPages = ["*://*.patreon.com/posts/*"];
+const contextMenusCommonValues = {
+    documentUrlPatterns: ['*://*.patreon.com/posts/*'],
+    contexts: ['page']
+}
 
 chrome.contextMenus.create({
-    title: "Show all comments",
-    "documentUrlPatterns":showForPages,
-    contexts: ["page"],
-    id: "contextId1"
-});
+    title: 'Show all comments',
+    id: 'contextId1',
+    ...contextMenusCommonValues
+})
 
 chrome.contextMenus.create({
-    title: "Export comments",
-    "documentUrlPatterns":showForPages,
-    contexts: ["page"],
-    id: "contextId2"
-});
+    title: 'Export comments',
+    id: 'contextId2',
+    ...contextMenusCommonValues
+})
 
-chrome.contextMenus.onClicked.addListener(genericOnClick);
+chrome.contextMenus.onClicked.addListener(genericOnClick)
