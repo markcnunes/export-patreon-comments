@@ -1,0 +1,14 @@
+{
+  "name": "export-patreon-comments",
+  "version": "1.0.2",
+  "scripts": {
+    "prettier-check": "prettier --check .",
+    "prettier-write": "prettier --write .",
+    "lint": "eslint . --ext js"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.6.2"
+  }
+}
