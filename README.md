@@ -9,6 +9,8 @@ How to use: Right-click on the page.
 
 ![Cover](https://github.com/markcnunes/export-patreon-comments/blob/master/graphics/printscreen.png)
 
+These options will only be available on the post's page. The path should look something like this `patreon.com/posts/...`.
+
 [Open this extension on Chrome Web Store](https://chrome.google.com/webstore/detail/export-patreon-comments/cbpcohjaihendbaaegnfobblodjodecg)
 
 ## Authors
