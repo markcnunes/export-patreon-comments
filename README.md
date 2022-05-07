@@ -1,6 +1,7 @@
 # Export Patreon Comments
 
-Patreon loads about 10 or so comments on a post at a time. You have to manually refresh the load button to read the next round. It can take a long time if there is a high number of comments.
+
+Patreon loads about 10 or so comments on a post at a time. You have to manually refresh the load button to read the next round. It can take a long time if there is a high number of comments. 
 
 Use this chrome extension on Patreon's posts pages to show all comments or export it as a CSV file.
 
@@ -14,9 +15,9 @@ These options will only be available on the post's page. The path should look so
 
 ## Authors
 
-[Mark Claus Nunes](https://github.com/markcnunes) - _Initial work_
+[Mark Claus Nunes](https://github.com/markcnunes) - *Initial work* 
 
-[Gabrielle Motola](www.gabriellemotola.com) - _Concept_
+[Gabrielle Motola](www.gabriellemotola.com) - *Concept* 
 
 See also the list of [contributors](https://github.com/markcnunes/export-patreon-comments/graphs/contributors) who participated in this project.
 
