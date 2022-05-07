@@ -138,11 +138,11 @@ chrome.runtime.onMessage.addListener(function (msg, _sender, sendResponse) {
 //== UTILITIES
 // Function Get Today Date
 function GetTodayDate() {
-  var tdate = new Date()
-  var dd = tdate.getDate()
-  var MM = tdate.getMonth()
-  var yyyy = tdate.getFullYear()
-  var currentDate = dd + '-' + (MM + 1) + '-' + yyyy
+  const tdate = new Date()
+  const dd = tdate.getDate()
+  const MM = tdate.getMonth()
+  const yyyy = tdate.getFullYear()
+  const currentDate = dd + '-' + (MM + 1) + '-' + yyyy
 
   return currentDate
 }
@@ -162,29 +162,11 @@ function GetTodayDate() {
     }
 
     var blob = new Blob([data], { type: 'text/json' }),
-      e = document.createEvent('MouseEvents'),
       a = document.createElement('a')
 
     a.download = filename
     a.href = window.URL.createObjectURL(blob)
     a.dataset.downloadurl = ['text/json', a.download, a.href].join(':')
-    e.initMouseEvent(
-      'click',
-      true,
-      false,
-      window,
-      0,
-      0,
-      0,
-      0,
-      0,
-      false,
-      false,
-      false,
-      false,
-      0,
-      null
-    )
-    a.dispatchEvent(e)
+    a.dispatchEvent(new MouseEvent('click'))
   }
 })(console)
