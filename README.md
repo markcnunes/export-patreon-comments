@@ -1,4 +1,8 @@
-# Export Patreon Comments
+# Export Patreon Comments (Archived)
+
+⚠️ **This project is no longer maintained and has not worked for a few months.** I haven’t used Patreon in years, so I’m not planning to update it. Hopefully, it’s still useful as a reference—feel free to fork it and develop your own version if you’d like to fix or improve it!
+
+---
 
 Patreon loads about 10 or so comments on a post at a time. You have to manually refresh the load button to read the next round. It can take a long time if there is a high number of comments.
 
